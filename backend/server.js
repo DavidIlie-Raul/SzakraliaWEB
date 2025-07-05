@@ -11,9 +11,9 @@ app.use("/api/events", require("./routes/events"));
 
 // Serve frontend
 const path = require("path");
-app.use(express.static(path.join(__dirname, "../frontend/dist")));
-app.get("*", (req, res) =>
-  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"))
+app.use(express.static(path.join(__dirname, "../frontend")));
+app.get("/*randomName", (req, res) =>
+  res.sendFile(path.join(__dirname, "../frontend/index.html"))
 );
 
 app.listen(3000, () => console.log("Server started on port 3000"));
