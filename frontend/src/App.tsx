@@ -10,25 +10,15 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="p-6">
-      <nav className="space-x-4 mb-6">
-        <Link to="/" className="text-blue-600 hover:underline">
-          Home
-        </Link>
-        <Link to="/about" className="text-blue-600 hover:underline">
-          About
-        </Link>
-        <Link to="/contact" className="text-blue-600 hover:underline">
-          Contact
-        </Link>
-      </nav>
+    <>
+      <Header></Header>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
