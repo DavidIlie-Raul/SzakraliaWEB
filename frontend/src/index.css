@@ -18,6 +18,8 @@
   line-height: 1.5;
   font-weight: 400;
 
+  scroll-behavior: smooth;
+
   color-scheme: light dark;
 
   font-synthesis: none;
@@ -27,10 +29,12 @@
   --primary-font: "Lora";
   --secondary-font: "Playfair Display";
   --background: #e8ded1;
+  --background-1: #cbc2b7;
   --primary: #a24c4a;
   --accent: #6b8e62;
   --secondary: #f3e9dc;
   --text: #7b5e57;
+  --text-dark: #2a1e1a;
   --contrast: #7b5e57;
   --radius: 0.625rem;
   --foreground: oklch(0.145 0 0);
