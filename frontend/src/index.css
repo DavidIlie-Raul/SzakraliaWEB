@@ -29,12 +29,14 @@
   --primary-font: "Lora";
   --secondary-font: "Playfair Display";
   --background: #e8ded1;
-  --background-1: #cbc2b7;
+  --background-1: #5a534a;
   --primary: #a24c4a;
   --accent: #6b8e62;
   --secondary: #f3e9dc;
   --text: #7b5e57;
   --text-dark: #2a1e1a;
+  --dark-brown: #3b2f2b;
+  --soft-brown: #5a4b47;
   --contrast: #7b5e57;
   --radius: 0.625rem;
   --foreground: oklch(0.145 0 0);
@@ -71,6 +73,19 @@ body {
   display: block;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.swiper-button-prev::after {
+  color: var(--primary);
+}
+.swiper-button-next::after {
+  color: var(--primary);
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+span.swiper-pagination-bullet {
+  background: var(--accent);
 }
 
 @media (prefers-color-scheme: light) {
