@@ -321,7 +321,6 @@ function Home() {
           </form>
         </div>
       </section>
-      <Footer></Footer>
     </>
   );
 }
