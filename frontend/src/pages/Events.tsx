@@ -11,6 +11,7 @@ function Events() {
       description:
         "Tanulj meg egyedi csokrokat készíteni tradicionális magyar stílusban.",
       time: "8:00PM",
+      image: "./src/assets/city.jpeg",
     },
     {
       title: "Őszi Lélekünnep",
