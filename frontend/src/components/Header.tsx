@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import { User } from "lucide-react"; // Lucide icon library (install if needed)
+import { User, ShoppingCart } from "lucide-react"; // Lucide icon library (install if needed)
+import { useNavigate } from "react-router-dom";
 import useScrollDirection from "./hooks/useScrollDirection";
 
 function Header() {
   const scrollDir = useScrollDirection();
+  const navigate = useNavigate();
   return (
     <header
       className={`fixed w-full top-0 z-50 bg-[var(--primary)] text-white shadow-md transition-transform duration-300 ${
@@ -65,8 +67,21 @@ function Header() {
         {/* Right: Profile + Login */}
         <div className="hidden md:flex items-center gap-4">
           {/* Profile icon */}
-          <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition">
+          <button
+            onClick={() => {
+              navigate("/profile");
+            }}
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition"
+          >
             <User size={20} />
+          </button>
+          <button
+            onClick={() => {
+              navigate("/cart");
+            }}
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition"
+          >
+            <ShoppingCart size={20} />
           </button>
 
           {/* Login button */}

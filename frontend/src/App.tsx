@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import "./App.css";
 import Events from "./pages/Events";
 import Footer from "./components/Footer";
+import Cart from "./pages/Cart";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/cart" element={<Cart />}></Route>
       </Routes>
       <Footer></Footer>
     </>
