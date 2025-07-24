@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import { User } from "lucide-react"; // Lucide icon library (install if needed)
+import useScrollDirection from "./hooks/useScrollDirection";
 
 function Header() {
+  const scrollDir = useScrollDirection();
   return (
-    <header className="bg-[var(--primary)] text-white shadow-md">
+    <header
+      className={`fixed w-full top-0 z-50 bg-[var(--primary)] text-white shadow-md transition-transform duration-300 ${
+        scrollDir === "down" ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       <div className="relative max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="text-xl font-bold tracking-wide">

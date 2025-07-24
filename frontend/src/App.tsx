@@ -14,6 +14,8 @@ function App() {
   return (
     <>
       <Header></Header>
+      {/*Adding a Div with Top margin to compensate for the loss of space cause by making the header Absolute for Animation. */}
+      <div className="mt-16"></div>
 
       <Routes>
         <Route path="/" element={<Home />} />
