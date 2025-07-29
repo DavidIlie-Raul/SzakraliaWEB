@@ -68,7 +68,7 @@ function Home() {
           </defs>
           <path
             d="M0,0 L0,100 Q50,0 100,100 L100,0 Z"
-            fill="var(--soft-brown)"
+            fill="var(--background-1)"
             filter="url(#top-shadow)"
             transform="scale(1, -1) translate(0, -100)"
           />
@@ -87,7 +87,7 @@ function Home() {
         </svg>
       </div> */}
 
-      <section className="bg-[var(--soft-brown)] shadow-[0_-8px_6px_rgba(0,0,0,0.1)] pt-15">
+      <section className="bg-[var(--background-1)] shadow-[0_-8px_6px_rgba(0,0,0,0.1)] pt-15">
         {/* SECTION HEADING */}
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-[var(--secondary)] mb-4">

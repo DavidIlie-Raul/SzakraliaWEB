@@ -8,12 +8,14 @@ import "./App.css";
 import Events from "./pages/Events";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
+import ScrollToTop from "./components/hooks/scrollToTop";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <ScrollToTop />
       <Header></Header>
       {/*Adding a Div with Top margin to compensate for the loss of space cause by making the header Absolute for Animation. */}
       <div className="mt-16"></div>
