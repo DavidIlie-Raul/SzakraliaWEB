@@ -10,6 +10,7 @@ import Cart from "./pages/Cart";
 import ScrollToTop from "./components/hooks/scrollToTop";
 import Account from "./pages/Account";
 import Services from "./pages/Services";
+import Login from "./pages/Login";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/account" element={<Account/>}></Route>
         <Route path="/services" element={<Services/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
       </Routes>
       <Footer></Footer>
     </>
