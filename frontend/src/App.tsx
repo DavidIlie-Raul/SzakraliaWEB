@@ -4,11 +4,12 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import "./App.css";
 import Events from "./pages/Events";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
 import ScrollToTop from "./components/hooks/scrollToTop";
+import Account from "./pages/Account";
+import Services from "./pages/Services";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +27,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />
         <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/account" element={<Account/>}></Route>
+        <Route path="/services" element={<Services/>}></Route>
       </Routes>
       <Footer></Footer>
     </>

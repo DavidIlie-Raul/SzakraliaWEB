@@ -27,7 +27,7 @@ function Cart() {
   );
 
   return (
-    <section className="max-w-5xl min-h-[40vw] mx-auto px-4 py-12">
+    <section className="max-w-5xl h-screen min-h-[40vw] mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-[var(--primary)] mb-8">Kosár</h1>
 
       {cartItems.length === 0 ? (

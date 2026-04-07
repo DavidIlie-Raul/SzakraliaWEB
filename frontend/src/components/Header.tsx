@@ -69,7 +69,7 @@ function Header() {
           {/* Profile icon */}
           <button
             onClick={() => {
-              navigate("/profile");
+              navigate("/account");
             }}
             className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition"
           >
